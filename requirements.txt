@@ -1,0 +1,15 @@
+# For loading the GOOGLE_API_KEY from the .env file
+python-dotenv
+
+# The core LangChain library for prompts, chains, etc.
+langchain
+
+# The state machine/agent framework from LangChain
+langgraph
+streamlit
+# The specific LangChain integration for connecting to Google Gemini models
+# using an API Key.
+langchain-google-genai
+
+# The library for creating the interactive web UI
+gradio
