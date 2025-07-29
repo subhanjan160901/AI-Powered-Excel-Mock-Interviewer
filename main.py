@@ -89,4 +89,4 @@ if st.session_state.interviewer_state["interview_status"] == 1:
         st.rerun()
 
 elif st.session_state.interviewer_state["interview_status"] == 2:
-    st.success("Interview complete! You can find your performance report above. Click 'Start New Interview' to try again.")```
+    st.success("Interview complete! You can find your performance report above. Click 'Start New Interview' to try again.")
