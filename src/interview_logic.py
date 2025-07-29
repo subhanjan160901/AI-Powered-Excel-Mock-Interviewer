@@ -3,7 +3,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 from .perplexity_detector import is_ai_generated
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.7, top_p=0.9)
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", temperature=0.7, top_p=0.9)
 
 # Pre-defined list of Excel questions for the interview
 EXCEL_QUESTIONS = [
