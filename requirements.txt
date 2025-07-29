@@ -1,17 +1,12 @@
-# For loading the GOOGLE_API_KEY from the .env file
-python-dotenv
+# requirements.txt
 
-# The core LangChain library for prompts, chains, etc.
-langchain
-
-# The state machine/agent framework from LangChain
-langgraph
+# Core frameworks
 streamlit
-# The specific LangChain integration for connecting to Google Gemini models
-# using an API Key.
-langchain-google-genai
+langchain
+langgraph
 
-# The library for creating the interactive web UI
-gradio
+# For running local models
 torch
 transformers
+accelerate
+einops
