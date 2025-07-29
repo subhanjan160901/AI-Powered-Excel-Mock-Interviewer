@@ -13,3 +13,5 @@ langchain-google-genai
 
 # The library for creating the interactive web UI
 gradio
+torch
+transformers
