@@ -11,7 +11,8 @@ pinned: false
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference -->
 
-🤖 AI-Powered Excel Interviewer
+🤖 ###AI-Powered Excel Interviewer###
+
 This repository contains the source code for an advanced, AI-powered conversational agent designed to conduct technical interviews for Excel skills. The system uses a state machine built with LangGraph to manage the interview flow, evaluates answers with a local Phi-3 model, and includes a perplexity-based check to detect AI-generated responses.
 
 ![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live%20Demo-yellow)
