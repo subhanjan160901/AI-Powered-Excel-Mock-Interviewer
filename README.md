@@ -66,20 +66,6 @@ The application uses a modern stack to separate the UI, logic, and AI model laye
     
         A -- Interacts with --> B
 
-    
-📂 Project Structure:
-
-The codebase is organized into a src directory to keep the logic modular and clean.
-
-.
-├── app.py                # Main application: Gradio UI and event listeners
-├── requirements.txt        # Python dependencies
-└── src
-    ├── __init__.py
-    ├── graph.py              # Defines the LangGraph state machine and its edges
-    ├── interview_logic.py    # Contains the core functions (nodes) for the graph
-    ├── local_llm_handler.py  # Manages loading and running the Phi-3 model
-    └── perplexity_detector.py# Manages the GPT-2 model for perplexity checks
 
     
 🚀 Setup and Running Locally:
