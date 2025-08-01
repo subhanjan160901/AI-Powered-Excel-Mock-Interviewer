@@ -11,7 +11,7 @@ pinned: false
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference -->
 
-🤖 AI-Powered Excel Interviewer
+## 🤖 AI-Powered Excel Interviewer
 
 This repository contains the source code for an advanced, AI-powered conversational agent designed to conduct technical interviews for Excel skills. The system uses a state machine built with LangGraph to manage the interview flow, evaluates answers with a local Phi-3 model, and includes a perplexity-based check to detect AI-generated responses.
 
@@ -20,7 +20,7 @@ This repository contains the source code for an advanced, AI-powered conversatio
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 
-⭐ Features :
+# ⭐ Features :
 1. Conversational Interview Flow: Engages users in a natural, turn-by-turn conversation.
 
 2. AI-Powered Evaluation: Uses a local microsoft/phi-3-mini-4k-instruct model to provide real-time, nuanced feedback on the user's answers.
@@ -67,7 +67,7 @@ The application uses a modern stack to separate the UI, logic, and AI model laye
 
 
     
-🚀 Setup and Running Locally:
+# 🚀 Setup and Running Locally:
 
 Follow these steps to get the application running on your own machine -
 
@@ -76,7 +76,6 @@ Python 3.10 or higher
 Git
 2. Clone the Repository
 git clone https://huggingface.co/spaces/Basu03/personal_excel_interviewer
-cd personal_excel_interviewer
 3. Create a Virtual Environment (Recommended)
 # For Windows
 python -m venv venv
@@ -99,7 +98,7 @@ python app.py
 
 Note: The very first time you run the app, it will download the AI models (~8 GB in total). This may take several minutes depending on your internet connection. The --- All models pre-loaded successfully --- message will appear in your terminal when it's ready. Subsequent startups will be much faster as the models will be cached.
 
-⚙️ Configuration
+# ⚙️ Configuration
 
 You can easily customize the interview by modifying:
 
@@ -109,6 +108,6 @@ The AI Detection Threshold: Change the threshold value in the is_ai_generated fu
 
 The AI Models: Update the model names in src/local_llm_handler.py and src/perplexity_detector.py to experiment with different language models.
 
-📄 License:
+# 📄 License:
 
 This project is licensed under the MIT License. See the LICENSE file for details.
