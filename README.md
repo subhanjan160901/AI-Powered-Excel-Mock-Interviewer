@@ -23,17 +23,15 @@ This repository contains the source code for an advanced, AI-powered conversatio
 ⭐ Features :
 1. Conversational Interview Flow: Engages users in a natural, turn-by-turn conversation.
 
-2. Dynamic Questioning: Asks a predefined set of questions in sequence.
+2. AI-Powered Evaluation: Uses a local microsoft/phi-3-mini-4k-instruct model to provide real-time, nuanced feedback on the user's answers.
 
-3. AI-Powered Evaluation: Uses a local microsoft/phi-3-mini-4k-instruct model to provide real-time, nuanced feedback on the user's answers.
+3. AI Plagiarism Detection: Integrates a perplexity check using a gpt-2 model to flag answers that are likely machine-generated, ensuring authentic responses.
 
-4. AI Plagiarism Detection: Integrates a perplexity check using a gpt-2 model to flag answers that are likely machine-generated, ensuring authentic responses.
+4. Stateful Logic with LangGraph: The entire interview process is orchestrated by a robust state machine, making the logic easy to understand.
 
-5. Stateful Logic with LangGraph: The entire interview process is orchestrated by a robust state machine, making the logic easy to understand and extend.
+5. Final Performance Report: At the end of the interview, the AI generates a comprehensive summary of the user's strengths and areas for improvement.
 
-6. Final Performance Report: At the end of the interview, the AI generates a comprehensive summary of the user's strengths and areas for improvement.
-
-7. Modern & Responsive UI: Built with Gradio Blocks for a clean, intuitive, and mobile-friendly user experience.
+6. Modern & Responsive UI: Built with Gradio Blocks for a clean, intuitive, and mobile-friendly user experience.
 
 🛠️ Tech Stack & Architecture:
 
