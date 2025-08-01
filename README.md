@@ -34,14 +34,16 @@ This repository contains the source code for an advanced, AI-powered conversatio
 
 7. Modern & Responsive UI: Built with Gradio Blocks for a clean, intuitive, and mobile-friendly user experience.
 
-🛠️ Tech Stack & Architecture
+🛠️ Tech Stack & Architecture:
+
 The application uses a modern stack to separate the UI, logic, and AI model layers effectively.
 
-graph TD
+
+    graph TD
     subgraph Frontend
         A[User Interface (Gradio Blocks)]
     end
-
+    
     subgraph Backend Logic
         B(app.py) -- Manages UI events & state --> C{Stateful Graph (LangGraph)}
     end
@@ -63,7 +65,10 @@ graph TD
     G -- Uses --> H
 
     A -- Interacts with --> B
-📂 Project Structure
+
+    
+📂 Project Structure:
+
 The codebase is organized into a src directory to keep the logic modular and clean.
 
 .
@@ -77,8 +82,9 @@ The codebase is organized into a src directory to keep the logic modular and cle
     └── perplexity_detector.py# Manages the GPT-2 model for perplexity checks
 
     
-🚀 Setup and Running Locally
-Follow these steps to get the application running on your own machine.
+🚀 Setup and Running Locally:
+
+Follow these steps to get the application running on your own machine -
 
 1. Prerequisites
 Python 3.10 or higher
