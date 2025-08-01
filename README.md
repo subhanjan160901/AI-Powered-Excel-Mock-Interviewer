@@ -40,31 +40,31 @@ The application uses a modern stack to separate the UI, logic, and AI model laye
 
 
     graph TD
-    subgraph Frontend
-        A[User Interface (Gradio Blocks)]
-    end
+        subgraph Frontend
+            A[User Interface (Gradio Blocks)]
+        end
+        
+        subgraph Backend Logic
+            B(app.py) -- Manages UI events & state --> C{Stateful Graph (LangGraph)}
+        end
     
-    subgraph Backend Logic
-        B(app.py) -- Manages UI events & state --> C{Stateful Graph (LangGraph)}
-    end
-
-    subgraph LangGraph Nodes
-        C -- Routes to --> D[1. start_interview]
-        C -- Routes to --> E[2. process_user_response]
-        C -- Routes to --> F[3. ask_question]
-        C -- Routes to --> G[4. generate_final_report]
-    end
+        subgraph LangGraph Nodes
+            C -- Routes to --> D[1. start_interview]
+            C -- Routes to --> E[2. process_user_response]
+            C -- Routes to --> F[3. ask_question]
+            C -- Routes to --> G[4. generate_final_report]
+        end
+        
+        subgraph AI Models
+            H[Evaluation & Reporting (Phi-3 Mini)]
+            I[Perplexity Detection (GPT-2)]
+        end
+        
+        E -- Uses --> H
+        E -- Uses --> I
+        G -- Uses --> H
     
-    subgraph AI Models
-        H[Evaluation & Reporting (Phi-3 Mini)]
-        I[Perplexity Detection (GPT-2)]
-    end
-    
-    E -- Uses --> H
-    E -- Uses --> I
-    G -- Uses --> H
-
-    A -- Interacts with --> B
+        A -- Interacts with --> B
 
     
 📂 Project Structure:
