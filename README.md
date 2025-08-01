@@ -77,15 +77,15 @@ Git
 2. Clone the Repository
 git clone https://huggingface.co/spaces/Basu03/personal_excel_interviewer
 3. Create a Virtual Environment (Recommended)
-# For Windows
-python -m venv venv
+    ### For Windows
+    python -m venv venv
+    
+    venv\Scripts\activate
+    
+    ### For macOS/Linux
+    python3 -m venv venv
 
-venv\Scripts\activate
-
-# For macOS/Linux
-python3 -m venv venv
-
-source venv/bin/activate
+    source venv/bin/activate
 
 4. Install Dependencies
    
