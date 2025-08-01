@@ -94,6 +94,7 @@ The requirements.txt file is optimized to ensure torch is installed first and us
 pip install -r requirements.txt
 
 5. Run the Application
+   
 python app.py
 
 Note: The very first time you run the app, it will download the AI models (~8 GB in total). This may take several minutes depending on your internet connection. The --- All models pre-loaded successfully --- message will appear in your terminal when it's ready. Subsequent startups will be much faster as the models will be cached.
@@ -102,11 +103,17 @@ Note: The very first time you run the app, it will download the AI models (~8 GB
 
 You can easily customize the interview by modifying:
 
-The Questions: Edit the EXCEL_QUESTIONS list in src/interview_logic.py.
+*The Questions:*
 
-The AI Detection Threshold: Change the threshold value in the is_ai_generated function call inside src/interview_logic.py. A lower value makes the detection more strict.
+Edit the EXCEL_QUESTIONS list in src/interview_logic.py.
 
-The AI Models: Update the model names in src/local_llm_handler.py and src/perplexity_detector.py to experiment with different language models.
+*The AI Detection Threshold:*
+
+Change the threshold value in the is_ai_generated function call inside src/interview_logic.py. A lower value makes the detection more strict.
+
+*The AI Models:*
+
+Update the model names in src/local_llm_handler.py and src/perplexity_detector.py to experiment with different language models.
 
 # 📄 License:
 
